@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    color: cornsilk;
+    font-style: inherit;
+    text-shadow: 8px 8px black;
+}
+
+.sticky>h1{
+    color: black;
+    font-style: inherit;
+    text-shadow: none;
+}
+button{
+     margin: 0;
+}
+
+input{
+     margin: 0;
+     color: black;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(70deg, blue, pink);
+    color: black;
+    font-family: cursive;
+    width: 100%;
+    height: 100%;
+    
+}
+
+header{
+    font-size: 2rem;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form input, form button {
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+
+}
+
+form button{
+    color: pink;
+    background: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form button:hover{
+    color: white;
+    background: pink;
+}
+    
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-left: -120px;
+    margin-top: 50px;
+
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.todo-item{
+    flex: 1;
+}
+
+.donetrash1{
+    background: rgb(147, 137, 207);
+    color: white;
+    border:none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+} 
+.donetrash2{
+    background: rgb(216, 160, 169);
+    color: white;
+    border:none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.todo-item{
+    padding: 0rem 0.5rem
+    
+}
+.fa-trash , .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+    transform: translate(2rem);
+
+}
+.fall{
+    transform: translateY(8rem);
+    opacity: 0;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline:none;
+  border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+
+}
+select{
+    color: rgb(206, 140, 192);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    
+
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background: pink;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease ;
+    
+}
+
+.select:hover::after{
+background: white;
+color: pink;
+}
+
+
+.text-danger{
+    color: rgb(170, 92, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: -35px;
+    margin-left: -220px;
+    font-weight: bold;
+    }
+
+
+.congo{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    position: sticky;
+    }
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-image: linear-gradient(70deg, blue, pink);
+    /* padding-top: 30px; */
+    font-size: 16px;
+    width: fit-content;
+    margin-left: 25%;
+    transition: all 0.3s ease ;
+    
+}
+
+   
+   
+   
